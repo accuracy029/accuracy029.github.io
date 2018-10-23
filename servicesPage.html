@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+    function openContactUs() {
+      window.location.href = "contactUsPage.html";
+    }
+  </script>
+
+<!-- code dont need anymore --------------------------------------------------->
+  <!-- <div class="servicesListing"><center>
+    <h2>Services We Provide:</h2></center>
+    <ul>
+      <li><a href="bookkeepingPage.html">Bookkeeping</a>
+      <li><a href="auditsPage.html">Audits</a>
+      <li><a href="taxesPage.html">Taxes</a>
+      <li><a href="annualReportsPage.html">Annual Reports</a>
+    <ul>
+  </div> -->
+<!----------------------------------------------------------------------------->
+
+</header>
+
+<body>
+  <!-- entire code for navbar ------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div>
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.PNG" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ----------------------------------------------------->
+
+  <center><h2>Services Provided:</h2>
+
+  <!-- welcoming boxes for services ------------------------------------------->
+  <div id="startServiceListing" class="block">
+    <div class="row">
+      <div class="columnTwo">
+        <h2><a href="#bookkeepingBlock">Bookkeeping</a></h2>
+      </div>
+      <div class="columnTwo">
+        <h2><a href="#auditsBlock">Audits</a></h2>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="columnTwo">
+        <h2><a href="#taxesBlock">Taxes</a></h2>
+      </div>
+      <div class="columnTwo">
+        <h2><a href="#annualReportsBlock">Annual Reports</a></h2>
+      </div>
+    </div>
+  </div>
+  </center>
+  <!--------------------------------------------------------------------------->
+
+  <br><br><br>
+
+  <!-- in-depth information on services stated above -------------------------->
+  <div id="depthServiceListing">
+
+   
+   <div class="row">
+     <div>
+     </div>
+     
+     <div>
+     </div>
+     
+     <div>
+     </div>
+   </div>
+
+
+    <div id="bookkeepingBlock" class="block">
+      <h3>Bookkeeping</h3>
+      <h6>Managing a business a stressful, especially managing financial records, 
+          but that is something we at Accuracy are determined to take responsibility 
+          of so you don't have to.</h6>
+      <button onclick="openContactUs()">Contact Us for More Information on Bookkeeping</button>
+    </div>
+    <div id="auditsBlock" class="block">
+      <h3>Audits</h3>
+      <h6>Let us help you during tax-return season by offering an affordable, 
+          efficient search of your records to ensure your business’s establishment.</h6>
+      <button onclick="openContactUs()">Contact Us for More Information on Audits</button>
+    </div>
+    <div id="taxesBlock" class="block">
+      <h3>Taxes</h3>
+      <h6>Tax planning and preparation is crucial to decreasing costs and 
+          increasing profits. Accuracy will work to make personalized plans for 
+          your company and walk you through the process of evaluating tax laws 
+          and exemptions.</h6>
+      <button onclick="openContactUs()">Contact Us for More Information on Tax Planning</button>
+    </div>
+    <div id="annualReportsBlock"class="block">
+      <h3>Annual Reports</h3>
+      <h6>Keep your shareholders and investors informed with a comprehensive 
+          report on your company’s activities and financial performance.</h6>
+      <button onclick="openContactUs()">Contact Us for More Information on Annual Reports</button>
+    </div>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

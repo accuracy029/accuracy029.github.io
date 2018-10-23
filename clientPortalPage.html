@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> Accuracy Client Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+
+// js dont need anymore ///////////////////////////////////////////////////////
+  // function showInfo() {
+  //   var x = document.getElementById("paymentInfo");
+  //   var y = document.getElementById("documentInfo");
+  //   var z = document.getElementById("calendar");
+  //
+  //   if (x.style.display === "none" && (y.style.display != "block" || z.style.display != "block")) {
+  //     x.style.display = "block";
+  //     y.style.display = "none";
+  //     z.style.display = "none";
+  //   } else if (){
+  //     x.style.display = "none";
+  //     y.style.display = "block";
+  //     z.style.display = "none";
+  //   }
+  // }
+    // function showPaymentInfo() {
+    //   var intro = document.getElementById("clientPageIntro");
+    //   intro.style.display = "none";
+    //
+    //   var x = document.getElementById("paymentInfo");
+    //   var y = document.getElementById("documentInfo");
+    //   var z = document.getElementById("calendar");
+    //
+    //   if (x.style.display === "none" && (y.style.display === "block")) {
+    //     x.style.display = "block";
+    //     // y.style.display = "none";
+    //     // z.style.display = "none";
+    //   } else {
+    //       x.style.display = "none";
+    //   }
+    // }
+    //
+    // function showDocumentInfo() {
+    //   var intro = document.getElementById("clientPageIntro");
+    //   intro.style.display = "none";
+    //
+    //   var x = document.getElementById("paymentInfo");
+    //   var y = document.getElementById("documentInfo");
+    //   var z = document.getElementById("calendar");
+    //
+    //   if (y.style.display === "none") {
+    //     // x.style.display = "none";
+    //     y.style.display = "block";
+    //     // z.style.display = "none";
+    //   } else {
+    //       y.style.display = "none";
+    //   }
+    // }
+    //
+    // function showCalendar() {
+    //   var intro = document.getElementById("clientPageIntro");
+    //   intro.style.display = "none";
+    //
+    //   var x = document.getElementById("paymentInfo");
+    //   var y = document.getElementById("documentInfo");
+    //   var z = document.getElementById("calendar");
+    //
+    //   if (z.style.display === "none") {
+    //     // x.style.display = "none";
+    //     // y.style.display = "none";
+    //     z.style.display = "block";
+    //   } else {
+    //       z.style.display = "none";
+    //   }
+    // }
+
+  </script>
+
+</header>
+
+<body>
+  <!-- entire code for navbar --------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div>
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.PNG" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!-- end of navbar code ------------------------------------------------------->
+  <h1>Client Portal</h1>
+
+  <div class="tab" id="infoBorder">
+    <button class="tablinks" onclick="openInfo(event, 'intro')" id="defaultOpen">Welcome</button>
+    <button class="tablinks" onclick="openInfo(event, 'payment')">Payment Plan</button>
+    <button class="tablinks" onclick="openInfo(event, 'documents')">Documents</button>
+    <button class="tablinks" onclick="openInfo(event, 'schedule')">Schedule</button>
+
+    <div id="intro" class="tabcontent">
+      <h3>Welcome</h5>
+      <br><h5>Please select a tab at the top to proceed.</h5>
+    </div>
+    <div id="payment" class="tabcontent">
+      <br>This is my payment information.
+      <br>It is good information.
+      <br>Very interesting information.
+      <br>Have a list of all the reasons its good:
+      <ul>
+        <li>Just is.</li>
+        <li>Very good.</li>
+        <li>Nuff said.</li>
+      </ul>
+    </div>
+    <div id="documents" class="tabcontent">
+      <br>I have info in here too!
+      <br>Rather, I want your info in here.
+      <br><i>Just wanting your information :)</i>
+    </div>
+    <div id=schedule class="tabcontent">
+      <br>I dont have the API or anything for this yet.
+      <br> rIP
+      <br>Thats okay I'lll find something eventually.
+      <br><br><br><iframe src="https://calendar.google.com/calendar/embed?src=accuracy029%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+
+    <script>
+    document.getElementById("defaultOpen").click();
+
+      function openInfo(evt, infoName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(infoName).style.display = "block";
+          evt.currentTarget.className += " active";
+      }
+    </script>
+  </div>
+
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <title> About Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+
+  <!-- javascript required for opening homepage through alternative means -->
+  <script>
+    function openHomePage() {
+      window.location.href = "index.html";
+    }
+    function openAboutUsPage() {
+      window.location.href = "aboutUsPage.html";
+    }
+    function openServicesPage() {
+      window.location.href = "servicesPage.html";
+    }
+  </script>
+
+</header>
+
+<body>
+  <!-- entire code for navbar ------------------------------------------------->
+  <!-- navigation bar code from right to left tabs -->
+  <div class="topnav">
+    <a href="contactUsPage.html">Contact Us</a>
+    <a href="clientPortalPage.html">Client Portal</a>
+    <a href="newsPage.html">News</a>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openServicesPage()">Services
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="bookkeepingPage.html">Bookkeeping</a>
+        <a href="auditsPage.html">Audits</a>
+        <a href="taxesPage.html">Taxes</a>
+        <a href="annualReportsPage.html">Annual Reports</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn" onclick="openAboutUsPage()">About Us
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#missionStatement">Mission Statement</a>
+        <a href="#companyHistory">Company History</a>
+        <a href="#meetOurTeam">Meet Our Team</a>
+      </div>
+    </div>
+
+    <div class="accuracyLogo">
+      <img src="AccuracyLogoSketch.PNG" height=48px width=37.2px onclick="openHomePage()">
+    </div>
+    <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- initial Text Block ----------------------------------------------------->
+  <div class="initialTextBlock">
+    <p><center><h1>Who Are We?</h1></center></p>
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- mission statement block ------------------------------------------------>
+  <div id="missionStatementBlock" class="block"><center>
+    <p><h2 name="missionStatement">Mission Statement</h2>
+    <br>
+    At Accuracy, we aim to aid small and private businesses maintain their
+    establishments by relieving the stress involved with finance management. In
+    providing a full range of services and maintaining close relations with clients
+    at this humble firm, Accuracy effectively provides high quality help while
+    keeping a close, personal connection.
+    </br>
+  </div></center>
+  <!--------------------------------------------------------------------------->
+
+  <!-- company History Block -------------------------------------------------->
+  <div id="companyHistoryBlock" class="block">
+    <p><h2 name="companyHistory">Company History<h2>
+
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h2>2003</h2>
+          <p>Accuracy was founded in Atlanta, Georgia.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2005</h2>
+          <p>Officially joined the American Accounting Association.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2012</h2>
+          <p>Featured in the Atlanta Journal Constitution.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h2>2015</h2>
+          <p>"Mr. Maxwell and his team did an incredibly impressive job managing my business's audit.
+            I could not be more thankful for Accuracy's work during this stressful time for me."</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h2>2018</h2>
+          <p>Opened a new partner office in Marietta, Georgia.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--------------------------------------------------------------------------->
+
+  <!-- meet the team ---------------------------------------------------------->
+  <div id="meetOurTeamBlock" class="block"><center>
+    <p><h2 name="meetOurTeam">Meet the Team</h2>
+
+    <br>
+    <div class="row">
+        <div class="columnThree">
+          <img src="aboutChristopher.JPG" width=200px height=200px>
+          <br><h3>Christopher Maxwell</h3>
+          <br><h4>Senior Accountant</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutMadeline.JPG" width=200px height=200px>
+          <br><h3>Madeline O'Carrol</h3>
+          <br><h4>Vice President of Operations</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutAnna.JPG" width=200px height=200px>
+          <br><h3>Anna Yi</h3>
+          <br><h4>Audit Partner</h4>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="columnThree">
+          <img src="aboutAiguo.JPG" width=200px height=200px>
+          <br><h3>Aiguo Suzuki</h3>
+          <br><h4>Audit Partner</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutScott.JPG" width=200px height=200px>
+          <br><h3>Scott Wellings</h3>
+          <br><h4>Tax Partner</h4>
+        </div>
+        <div class="columnThree">
+          <img src="aboutEric.JPG" width=200px height=200px>
+          <br><h3>Eric Zhang</h3>
+          <br><h4>Administrative Assistant</h4>
+        </div>
+      </div>
+
+  </div></center>
+  <!--------------------------------------------------------------------------->
+
+
+
+</body>
+
+<footer>
+</footer>
+
+</html>
