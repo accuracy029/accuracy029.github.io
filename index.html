@@ -22,7 +22,7 @@
 
 </header>
 
-<body>
+<body style="overflow:hidden;">
   <!-- entire code for navbar --------------------------------------------------->
   <!-- navigation bar code from right to left tabs -->
   <div class="topnav">
@@ -34,23 +34,23 @@
       <button class="dropbtn" onclick="openServicesPage()">Services
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
         <a href="bookkeepingPage.html">Bookkeeping</a>
         <a href="auditsPage.html">Audits</a>
         <a href="taxesPage.html">Taxes</a>
         <a href="annualReportsPage.html">Annual Reports</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="openAboutUsPage()">About Us
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
         <a href="#missionStatement">Mission Statement</a>
         <a href="#companyHistory">Company History</a>
         <a href="#meetOurTeam">Meet Our Team</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="accuracyLogo">
@@ -63,7 +63,7 @@
   <!-- make background picture fullscreen by simply creating div container -->
   <div class="bg"></div>
 
-  <div class="frontText">
+  <div class="frontText" id="frontTextDiv">
     <p><h1>Powerful and Efficient Accounting for
       <br>All Your Financial Needs</h1></p>
   </div>

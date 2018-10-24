@@ -20,78 +20,32 @@
     }
 
 // js dont need anymore ///////////////////////////////////////////////////////
-  // function showInfo() {
-  //   var x = document.getElementById("paymentInfo");
-  //   var y = document.getElementById("documentInfo");
-  //   var z = document.getElementById("calendar");
-  //
-  //   if (x.style.display === "none" && (y.style.display != "block" || z.style.display != "block")) {
-  //     x.style.display = "block";
-  //     y.style.display = "none";
-  //     z.style.display = "none";
-  //   } else if (){
-  //     x.style.display = "none";
-  //     y.style.display = "block";
-  //     z.style.display = "none";
-  //   }
-  // }
-    // function showPaymentInfo() {
-    //   var intro = document.getElementById("clientPageIntro");
-    //   intro.style.display = "none";
-    //
-    //   var x = document.getElementById("paymentInfo");
-    //   var y = document.getElementById("documentInfo");
-    //   var z = document.getElementById("calendar");
-    //
-    //   if (x.style.display === "none" && (y.style.display === "block")) {
-    //     x.style.display = "block";
-    //     // y.style.display = "none";
-    //     // z.style.display = "none";
-    //   } else {
-    //       x.style.display = "none";
-    //   }
-    // }
-    //
-    // function showDocumentInfo() {
-    //   var intro = document.getElementById("clientPageIntro");
-    //   intro.style.display = "none";
-    //
-    //   var x = document.getElementById("paymentInfo");
-    //   var y = document.getElementById("documentInfo");
-    //   var z = document.getElementById("calendar");
-    //
-    //   if (y.style.display === "none") {
-    //     // x.style.display = "none";
-    //     y.style.display = "block";
-    //     // z.style.display = "none";
-    //   } else {
-    //       y.style.display = "none";
-    //   }
-    // }
-    //
-    // function showCalendar() {
-    //   var intro = document.getElementById("clientPageIntro");
-    //   intro.style.display = "none";
-    //
-    //   var x = document.getElementById("paymentInfo");
-    //   var y = document.getElementById("documentInfo");
-    //   var z = document.getElementById("calendar");
-    //
-    //   if (z.style.display === "none") {
-    //     // x.style.display = "none";
-    //     // y.style.display = "none";
-    //     z.style.display = "block";
-    //   } else {
-    //       z.style.display = "none";
-    //   }
-    // }
-
   </script>
+
+  <!-- DONT USE THIS (payment)
+    <br>This is my payment information.
+      <br>It is good information.
+      <br>Very interesting information.
+      <br>Have a list of all the reasons its good:
+      <ul>
+        <li>Just is.</li>
+        <li>Very good.</li>
+        <li>Nuff said.</li>
+      </ul> -->
+ <!-- DONT USE THIS (documents)
+  <br>I have info in here too!
+  <br>Rather, I want your info in here.
+  <br><i>Just wanting your information :)</i> -->
+  <!-- DONT USE THIS (schedule)
+  <br>I dont have the API or anything for this yet.
+    <br> rIP
+    <br>Thats okay I'lll find something eventually. -->
+
 
 </header>
 
 <body>
-  <!-- entire code for navbar --------------------------------------------------->
+  <!-- entire code for navbar ------------------------------------------------->
   <!-- navigation bar code from right to left tabs -->
   <div class="topnav">
     <a href="contactUsPage.html">Contact Us</a>
@@ -102,23 +56,23 @@
       <button class="dropbtn" onclick="openServicesPage()">Services
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
         <a href="bookkeepingPage.html">Bookkeeping</a>
         <a href="auditsPage.html">Audits</a>
         <a href="taxesPage.html">Taxes</a>
         <a href="annualReportsPage.html">Annual Reports</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="dropdown">
       <button class="dropbtn" onclick="openAboutUsPage()">About Us
         <i class="fa fa-caret-down"></i>
       </button>
-      <div class="dropdown-content">
+      <!-- <div class="dropdown-content">
         <a href="#missionStatement">Mission Statement</a>
         <a href="#companyHistory">Company History</a>
         <a href="#meetOurTeam">Meet Our Team</a>
-      </div>
+      </div> -->
     </div>
 
     <div class="accuracyLogo">
@@ -126,7 +80,7 @@
     </div>
     <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
   </div>
-  <!-- end of navbar code ------------------------------------------------------->
+  <!-- end of navbar code ----------------------------------------------------->
   <h1>Client Portal</h1>
 
   <div class="tab" id="infoBorder">
@@ -137,49 +91,86 @@
 
     <div id="intro" class="tabcontent">
       <h3>Welcome</h5>
-      <br><h5>Please select a tab at the top to proceed.</h5>
+      <h5>Please select a tab at the top to proceed.</h5>
     </div>
+
     <div id="payment" class="tabcontent">
-      <br>This is my payment information.
-      <br>It is good information.
-      <br>Very interesting information.
-      <br>Have a list of all the reasons its good:
-      <ul>
-        <li>Just is.</li>
-        <li>Very good.</li>
-        <li>Nuff said.</li>
-      </ul>
+      <h3>Following Payment Plan Selections for This Account:</h3>
+      <h5>
+        <br>Bookkeeping Plan: not purchased
+        <br>Audit Plan: Small Company-$179
+        <br>Tax Prep Plan: Plan B (Itemized Deducations, State Return)-$273
+        <br>Annual Report Plan: not purchased
+      </h5>
+      <div id="otherPlansTable">
+        <h3>Other Available Plans:</h3>
+        <table>
+          <tr>
+            <th>Bookkeeping Plans:</th>
+            <th>Audit Plans:</th>
+            <th>Tax Prep Plans:</th>
+            <th>Annual Report Plans:</th>
+          </tr>
+          <tr><h5>
+            <td>$30-$50 each hour</td>
+            <td>Small Company (< 1000 employees)-$179</td>
+            <td>Plan A <i>(doesn't include itemized deductions, includes state return)-$159</i></td>
+            <td>$150
+          </tr>
+          <tr>
+            <td></td>
+            <td>Big Company (>= 1000 employees)-$249</td>
+            <td>Plan B *includes itemizes deductions and state returns)-$273</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td>Plan C: (includes itemized deductions, business income, and state returns)-$447</td>
+            <td></td>
+          </tr></h5>
+        </table>
+      </div>
     </div>
+
     <div id="documents" class="tabcontent">
-      <br>I have info in here too!
-      <br>Rather, I want your info in here.
-      <br><i>Just wanting your information :)</i>
+      <h3>Documents</h3>
+      <h4>Please upload your documents <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a>.
+      <br>Press <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a> to see your uploads.</h4>
+
+      <br>View our plans for your company <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a>.
     </div>
+
     <div id=schedule class="tabcontent">
-      <br>I dont have the API or anything for this yet.
-      <br> rIP
-      <br>Thats okay I'lll find something eventually.
-      <br><br><br><iframe src="https://calendar.google.com/calendar/embed?src=accuracy029%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      <h3>Schedule an Appointment or Meeting</h3>
+      <h6>We can be contacted at (123-456-7890) or accuracy029@gmail.com to schedule appointments and meetings.
+        <br><br>Below is a calendar of your current meeting days and times with one of our representatives.</h6>
+
+      <br><iframe src="https://calendar.google.com/calendar/embed?src=accuracy029%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+
     </div>
-  </div>
+
+    </div>
 
     <script>
-    document.getElementById("defaultOpen").click();
+      document.getElementById("defaultOpen").click();
 
-      function openInfo(evt, infoName) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablinks");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].className = tablinks[i].className.replace(" active", "");
-          }
-          document.getElementById(infoName).style.display = "block";
-          evt.currentTarget.className += " active";
-      }
+        function openInfo(evt, infoName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
     </script>
+
   </div>
 
 
