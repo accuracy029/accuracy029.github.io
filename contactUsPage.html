@@ -54,13 +54,37 @@
     </div>
 
     <div class="accuracyLogo">
-      <img src="AccuracyLogoSketch.PNG" height=48px width=37.2px onclick="openHomePage()">
+      <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
     </div>
     <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
   </div>
   <!-- end of navbar code ------------------------------------------------------->
 
   <h1>Contact Us</h1>
+
+  <div class="Contactcontainer">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="issue">Issue</label>
+    <select id="issue" name="issue">
+      <option value="services">Services</option>
+      <option value="clientportal">Client Portal</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
 
 </body>
 

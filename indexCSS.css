@@ -1,9 +1,42 @@
+/* all pages css **************************************************************/
+* {
+  font-family: 'Noto Sans', sans-serif;
+  color: white;
+}
+
+* :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea) {
+  background-color: #333333;
+}
+
+h1 {
+  color: #A16E83;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+a {
+  color: blue;
+}
+
+button {
+  color: black;
+}
+/******************************************************************************/
+
+
 /* homepage css ***************************************************************/
 /* makes the image in background fullscreen */
 body, html {
     height: 100%;
     margin: 0;
 }
+
 .bg {
     /* The image used */
     background-image: url("homepage_picture.jpg");
@@ -19,7 +52,6 @@ body, html {
 }
 /* front text of homepage ***********************/
 .frontText {
-  z-index: 4;
   position: fixed;
   top: 30%;
   left: 5%;
@@ -34,6 +66,7 @@ body, html {
 }
 
 /******************************************************************************/
+
 
 /* nav bar css ****************************************************************/
 /* Add a black background color to the top navigation */
@@ -62,11 +95,11 @@ body, html {
 }
 
 .accuracyLogo {
+  float: left;
   height: 48px;
   width: 37.2px;
-  float: left;
   padding-left: 25px;
-  padding-right: 10px;
+  padding-right: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -135,6 +168,7 @@ body, html {
 }
 /******************************************************************************/
 
+
 /* about us page css **********************************************************/
 /* for three-column tables */
 .columnThree {
@@ -146,6 +180,19 @@ body, html {
   display: table;
   clear: both;
   padding: 50px;
+}
+
+.aboutUsblock {
+  padding: 100px;
+}
+
+.initialTextBlock {
+  padding: 150px 50px 50px 50px;
+  font-size: 30px;
+}
+
+.meetOurTeamHeader {
+  background-color: #B19F9E;
 }
 
 /* timeline css ********************************/
@@ -239,7 +286,7 @@ body {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: yellow;
+  background-color: #479761;
   position: relative;
   border-radius: 6px;
 }
@@ -276,6 +323,7 @@ body {
 }
 /******************************************************************************/
 
+
 /* services css ***************************************************************/
 .columnTwo {
   float: left;
@@ -303,11 +351,12 @@ body {
   padding: 200px;
 }
 
-/* also used in about us!!!*/
+/* also used in about us!!! -- changed to aboutUsblock look there*/
 .block {
   padding: 200px;
 }
 /******************************************************************************/
+
 
 /* client portal css **********************************************************/
 #infoBorder {
@@ -343,5 +392,46 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.tabcontentHeaders {
+  color: #479761;
+}
+/******************************************************************************/
+
+
+/* contact us page css ********************************************************/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.Contactcontainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
 /******************************************************************************/
