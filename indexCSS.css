@@ -1,10 +1,13 @@
-/* all pages css **************************************************************/
+/* ALL PAGES css **************************************************************/
 * {
   font-family: 'Noto Sans', sans-serif;
+}
+
+* :not(a) {
   color: white;
 }
 
-* :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea) {
+* :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea):not(.timeline):not(.timelineWords):not(a):not(.rowServices):not(.columnTwoPics):not(.columnTwoWords) {
   background-color: #333333;
 }
 
@@ -13,14 +16,18 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
-a {
+h4 {
+  font-size: 20px;
+}
+
+a :not(.topnav):not(.bottom-leftWords) {
   color: blue;
 }
 
@@ -30,45 +37,7 @@ button {
 /******************************************************************************/
 
 
-/* homepage css ***************************************************************/
-/* makes the image in background fullscreen */
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bg {
-    /* The image used */
-    background-image: url("homepage_picture.jpg");
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-}
-/* front text of homepage ***********************/
-.frontText {
-  position: fixed;
-  top: 30%;
-  left: 5%;
-  /* transform: translate(-50%, -50%); */
-  font-family: 'Krub', sans-serif;
-  color: white;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-
-/******************************************************************************/
-
-
-/* nav bar css ****************************************************************/
+/* NAV BAR css ****************************************************************/
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -169,7 +138,45 @@ body, html {
 /******************************************************************************/
 
 
-/* about us page css **********************************************************/
+/* HOME PAGE / INDEX css ***************************************************************/
+/* makes the image in background fullscreen */
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("homepage_picture.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+/* front text of homepage ***********************/
+.frontText {
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  /* transform: translate(-50%, -50%); */
+  font-family: 'Krub', sans-serif;
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+/******************************************************************************/
+
+
+/* ABOUT US PAGE css **********************************************************/
 /* for three-column tables */
 .columnThree {
   float: left;
@@ -189,6 +196,11 @@ body, html {
 .initialTextBlock {
   padding: 150px 50px 50px 50px;
   font-size: 30px;
+}
+
+#missionStatementBlock {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .meetOurTeamHeader {
@@ -324,41 +336,68 @@ body {
 /******************************************************************************/
 
 
-/* services css ***************************************************************/
+/* SERVICES PAGE css ***************************************************************/
+/* #bookkeepingBlock, #auditsBlock, #taxesBlock, #annualReportsBlock {
+  background-color: #B19F9E;
+} */
+
 .columnTwo {
   float: left;
   width: 50%;
+}
+
+.picContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-leftWords {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.Servicesrow {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0px 0px 0px 0px;
 }
 
 .columnTwoPic {
   float: left;
   width: 50%;
   text-align: right;
-  padding-right: 100px;
+  padding: 31px 100px 0px 0px;
 }
 
 .columnTwoWords {
   float: left;
   width: 50%;
   text-align: left;
-  padding-right:100px;;
+  padding-right: 100px;
 }
 
 .rowServices:after {
   content: "";
   display: table;
   clear: both;
-  padding: 200px;
+  padding: 150px 5% 150px 5%;
 }
 
 /* also used in about us!!! -- changed to aboutUsblock look there*/
-.block {
+.block:not(#startServiceListing) {
   padding: 200px;
+}
+
+#startServiceListing {
+  padding: 50px 25% 100px 25%;
 }
 /******************************************************************************/
 
 
-/* client portal css **********************************************************/
+/* CLIENT PORTAL PAGE css **********************************************************/
 #infoBorder {
   padding: 15px 30px;
   margin: auto;
@@ -400,7 +439,12 @@ tr:nth-child(even) {
 /******************************************************************************/
 
 
-/* contact us page css ********************************************************/
+/* CONTACT US PAGE css ********************************************************/
+.contactUsInitialText {
+  padding: 50px 0px 10px 0px;
+}
+
+/* FORM CSS ****************************************/
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -413,9 +457,13 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+input[type=text], textarea, select {
+  color: black;
+}
+
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-color: #479761;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -425,13 +473,13 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #316844;
 }
 
 /* Add a background color and some padding around the form */
 .Contactcontainer {
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 20px;
+    padding: 0px 300px 0px 300px;
 }
 /******************************************************************************/

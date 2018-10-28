@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
   <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
   <!-- javascript required for opening homepage through alternative means -->
   <script>
@@ -81,22 +82,32 @@
 
   <!-- welcoming boxes for services ------------------------------------------->
   <div id="startServiceListing" class="block">
-    <div class="row">
+    <div class="Servicesrow">
       <div class="columnTwo">
-	<img src="servicesbookkeepingPic.jpg" width=100% height=100px>
-        <h2><a href="#bookkeepingBlock">Bookkeeping</a></h2>
+        <div class="picContainer">
+          <img src="servicesbookkeepingPic.jpg" width=100% height=250px>
+          <h2><a href="#bookkeepingBlock" class="bottom-leftWords">Bookkeeping</a></h2>
+        </div>
       </div>
       <div class="columnTwo">
-        <h2><a href="#auditsBlock">Audits</a></h2>
+        <div class="picContainer">
+          <img src="servicesauditsPic.jpg" width=100% height=250px>
+          <h2><a href="#auditsBlock" class="bottom-leftWords">Audits</a></h2>
+        </div>
       </div>
     </div>
-    <br>
-    <div class="row">
+    <div class="Servicesrow">
       <div class="columnTwo">
-        <h2><a href="#taxesBlock">Taxes</a></h2>
+        <div class="picContainer">
+          <img src="servicestaxesPic.jpg" width=100% height=250px>
+          <h2><a href="#taxesBlock" class="bottom-leftWords">Taxes</a></h2>
+        </div>
       </div>
       <div class="columnTwo">
-        <h2><a href="#annualReportsBlock">Annual Reports</a></h2>
+        <div class="picContainer">
+          <img src="servicesAnnualReportsPic.jpg" width=100% height=250px>
+          <h2><a href="#annualReportsBlock" class="bottom-leftWords">Annual Reports</a></h2>
+        </div>
       </div>
     </div>
   </div>
@@ -107,69 +118,73 @@
 
   <!-- in-depth information on services stated above -------------------------->
   <div id="depthServiceListing">
-    <div class="rowServices">
+    <div class="rowServices" id="bookkeepingBlock">
       <div class="columnTwoPic">
         <div id="servicesBookkeepingPic">
-        <img src="servicesBookkeepingPic.jpg" width=400px height=200px>
+          <img src="servicesBookkeepingPic.jpg" align="middle" width=50% height=200px>
         </div>
       </div>
       <div class="columnTwoWords">
-        <div id="bookkeepingBlock">
+        <div>
           <h2>Bookkeeping</h2>
           <h4>Managing a business a stressful, especially managing financial records,
               but that is something we at Accuracy are determined to take responsibility
               of so you don't have to.</h4>
           <button onclick="openContactUs()">Contact Us for More Information on Bookkeeping</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
         </div>
       </div>
     </div>
 
-    <div id="block" class="rowServices">
+    <div class="rowServices" id="auditsBlock">
       <div class="columnTwoPic">
         <div id="auditsPic">
-        <img src="servicesAuditsPic.jpg" width=400px height=200px>
+        <img src="servicesAuditsPic.jpg" align="middle" width=50% height=200px>
         </div>
       </div>
       <div class="columnTwoWords">
-        <div id="auditsBlock">
+        <div>
           <h2>Audits</h2>
           <h4>Let us help you during tax-return season by offering an affordable,
               efficient search of your records to ensure your business's establishment.</h4>
           <button onclick="openContactUs()">Contact Us for More Information on Audits</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
         </div>
       </div>
     </div>
 
-    <div class="rowServices">
+    <div class="rowServices" id="taxesBlock">
       <div class="columnTwoPic">
         <div id="servicesTaxesPic">
-        <img src="servicesTaxesPic.jpg" width=400px height=200px>
+        <img src="servicesTaxesPic.jpg" align="middle" width=50% height=200px>
         </div>
       </div>
       <div class="columnTwoWords">
-        <div id="taxesBlock">
+        <div>
           <h2>Taxes</h2>
           <h4>Tax planning and preparation is crucial to decreasing costs and
               increasing profits. Accuracy will work to make personalized plans for
               your company and walk you through the process of evaluating tax laws
               and exemptions.</h4>
           <button onclick="openContactUs()">Contact Us for More Information on Tax Planning</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
         </div>
       </div>
     </div>
 
-    <div class="rowServices">
+    <div class="rowServices" id="annualReportsBlock">
       <div class="columnTwoPic">
         <div id="annualReportsPic">
-        <img src="servicesAnnualReportsPic.jpg" width=400px height=200px>
+        <img src="servicesAnnualReportsPic.jpg" align="middle" width=50% height=200px>
         </div>
       </div>
       <div class="columnTwoWords">
-        <div id="annualReportsBlock">
+        <div>
           <h2>Annual Reports</h2>
           <h4>Keep your shareholders and investors informed with a comprehensive
               report on your company's activities and financial performance.</h4>
           <button onclick="openContactUs()">Contact Us for More Information on Annual Reports</button>
+          <br><br><button style="float: right;" onclick="openServicesPage()">Back to Top</button>
         </div>
       </div>
     </div>

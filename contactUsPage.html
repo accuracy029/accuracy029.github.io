@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
   <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 
   <!-- javascript required for opening homepage through alternative means -->
   <script>
@@ -17,6 +18,10 @@
     }
     function openServicesPage() {
       window.location.href = "servicesPage.html";
+    }
+
+    function loadContactUsResponse() {
+      window.alert("Thank you for contacting us. We will get back to you in 1-4 business days. We thank you for your patience");
     }
   </script>
 
@@ -60,10 +65,10 @@
   </div>
   <!-- end of navbar code ------------------------------------------------------->
 
-  <h1>Contact Us</h1>
+  <center><h1 class="contactUsInitialText">Contact Us</h1></center>
 
   <div class="Contactcontainer">
-  <form action="action_page.php">
+  <form>
 
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -73,7 +78,7 @@
 
     <label for="issue">Issue</label>
     <select id="issue" name="issue">
-      <option value="services">Services</option>
+      <option selected="selected" value="services">Services</option>
       <option value="clientportal">Client Portal</option>
       <option value="other">Other</option>
     </select>
@@ -81,7 +86,7 @@
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Submit" onclick="loadContactUsResponse()">
 
   </form>
 </div>
