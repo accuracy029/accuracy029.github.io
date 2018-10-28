@@ -3,11 +3,15 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-* :not(a) {
+* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey) {
   color: white;
 }
 
-* :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea):not(.timeline):not(.timelineWords):not(a):not(.rowServices):not(.columnTwoPics):not(.columnTwoWords) {
+/* * :not(.topnav):not(.frontText):not(button):not(.content):not(table):not(td):not(th):not(input):not(select):not(textarea):not(.timeline):not(.timelineWords):not(a):not(.rowServices):not(.columnTwoPics):not(.columnTwoWords):not(b) {
+  background-color: #333333;
+} */
+
+body {
   background-color: #333333;
 }
 
@@ -34,6 +38,8 @@ a :not(.topnav):not(.bottom-leftWords) {
 button {
   color: black;
 }
+
+
 /******************************************************************************/
 
 
@@ -396,6 +402,30 @@ body {
 }
 /******************************************************************************/
 
+/* NEWS PAGE CSS **************************************************************/
+/*article {
+    border: 10px black inset;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 35%;
+
+    float:left;
+    display:inline;
+    width: 49%;
+  }*/
+  /*#sidebar {
+    float:left;
+    display:inline;
+    width: 49%;
+  } */
+
+#readMoreButton {
+  color: black;
+}
+
+/******************************************************************************/
+
 
 /* CLIENT PORTAL PAGE css **********************************************************/
 #infoBorder {
@@ -479,7 +509,7 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .Contactcontainer {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #333333;
     padding: 0px 300px 0px 300px;
 }
 /******************************************************************************/
