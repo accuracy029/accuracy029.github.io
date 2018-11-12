@@ -3,7 +3,7 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList) {
+* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList):not(input):not(textarea):not(select):not(option):not(optgroup):not(.footer-links) {
   color: white;
 }
 
@@ -487,16 +487,16 @@ input[type=text], select, textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-input[type=text], textarea, select {
+input[type=text], textarea, select, option {
   color: black;
 }
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
     background-color: #479761;
-    color: white;
     padding: 12px 20px;
     border: none;
+    color: white;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -511,6 +511,7 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #333333;
     padding: 0px 300px 0px 300px;
+    margin-bottom: 150px;
 }
 /******************************************************************************/
 
