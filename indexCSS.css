@@ -3,7 +3,7 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey) {
+* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList) {
   color: white;
 }
 
@@ -11,7 +11,7 @@
   background-color: #333333;
 } */
 
-body {
+body:not(.siteMapBody) {
   background-color: #333333;
 }
 
@@ -184,7 +184,7 @@ body, html {
 
 /* ABOUT US PAGE css **********************************************************/
 /* for three-column tables */
-.columnThree {
+.columnThree { /* also used by footer*/
   float: left;
   width: 33.33%;
 }
@@ -210,7 +210,7 @@ body, html {
 }
 
 .meetOurTeamHeader {
-  background-color: #B19F9E;
+  color: #B19F9E;
 }
 
 /* timeline css ********************************/
@@ -513,3 +513,18 @@ input[type=submit]:hover {
     padding: 0px 300px 0px 300px;
 }
 /******************************************************************************/
+
+/* FOOTER CSS ****************************************************************/
+footer {
+  border: 2px black inset;
+}
+
+.columnTwoFooter {
+  float: left;
+  width: 30%;
+  margin: 5% 10% 5% 10%;
+}
+
+.siteMapList {
+  color: black;
+}
