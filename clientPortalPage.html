@@ -89,6 +89,7 @@
     <button class="tablinks" onclick="openInfo(event, 'payment')">Payment Plan</button>
     <button class="tablinks" onclick="openInfo(event, 'documents')">Documents</button>
     <button class="tablinks" onclick="openInfo(event, 'schedule')">Schedule</button>
+    <button class="tablinks" onclick="openInfo(event, 'FAQ')">FAQ</button>
 
     <div id="intro" class="tabcontent">
       <h3 class="tabcontentHeaders">Welcome</h3>
@@ -142,17 +143,33 @@
       <br>View our plans for your company <a href="https://drive.google.com/drive/folders/1BAWKYqiVTGPlFp_ekWI9J8uz7FQeRaRQ?usp=sharing" target="_blank">here</a>.
     </div>
 
-    <div id=schedule class="tabcontent">
+    <div id="schedule" class="tabcontent">
       <h3 class="tabcontentHeaders">Schedule an Appointment or Meeting</h3>
-      <h6>We can be contacted at (404-432-0189) or accuracy029@gmail.com to schedule appointments and meetings.
-        <br><br>Below is a calendar of your current meeting days and times with one of our representatives.</h6>
-
+      <h5>We can be contacted at (404-432-0189) or accuracy029@gmail.com to schedule appointments and meetings.
+        <br><br>Below is a calendar of your current meeting days and times with one of our representatives.
+                These meeting times have been input into our system through our representatives.
+                If a date needs altering or a new appointment needs to be made, please contact us at the information above.</h5>
       <br><iframe src="https://calendar.google.com/calendar/embed?src=accuracy029%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-
-
     </div>
 
+    <div id="FAQ" class="tabcontent">
+      <h3 class="tabcontentHeaders"> Frequently Asked Questions</h3>
+      <p><b><i style="color: #B19F9E;">What should I bring to my appointments?</b></i>
+        <br><h5 class="smallerFont">For the first meeting, a copy of your individual or your company’s tax
+                returns will suffice. At this meeting we will then discuss what other
+                documents will be required for your requested service.</h5>
+
+      <p><b><i style="color: #B19F9E;">Can I leave information and other physical documentation for analysis at your office without scheduling an appointment?</b></i>
+        <br><h5 class="smallerFont">Yes. Documentation can be dropped of at the front desk of our office and
+                our assistants will ensure it gets to the proper representative for analysis.</h5>
+
+      <p><b><i style="color: #B19F9E;">What should I do if I was mailed an official tax notice from the IRS or state?</b></i>
+        <br><h5 class="smallerFont">We will analyze the tax notice and notify you on its cause for being
+                sent and what actions need to be taken, but only after receiving it through
+                email or fax at accuracy029@gmail or 404-432-0189</h5>
     </div>
+
+  </div>
 
     <script>
       document.getElementById("defaultOpen").click();
@@ -171,8 +188,6 @@
             evt.currentTarget.className += " active";
         }
     </script>
-
-  </div>
 
 
 
@@ -225,10 +240,10 @@
 
     <div class="footer-icons">
 
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i><img id="facebookIcon">Facebook</a>
+      <a href="#"><i class="fa fa-twitter"></i><img id="twitterIcon">Twitter</a>
+      <a href="#"><i class="fa fa-linkedin"></i><img id="linkedInIcon">LinkedIn</a>
+      <a href="#"><i class="fa fa-instagram"></i><img id="instagramIcon">Instagram</a>
 
     </div>
 

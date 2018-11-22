@@ -21,6 +21,12 @@
     function openServicesPage() {
       window.location.href = "servicesPage.html";
     }
+
+    function openNewsPage() {
+      window.alert("Article not currently available. Please try again another time. Thank you for understanding.")
+      window.location.href = "newsPage.html";
+    }
+
   </script>
 
 </header>
@@ -151,7 +157,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       Accuracy is expanding and we hope you're along for the ride!</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button class="w3-button w3-padding-large w3-white w3-border"><b id="readMoreButton">READ MORE »</b></button></p>
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b id="readMoreButton" onclick = "openNewsPage()">READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b style="color: black;">Comments  </b> <span class="w3-tag">0</span></span></p>
@@ -174,7 +180,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       Accuracy only continues to grow with great recognition like this and with the support of its customers, so the next goal is for the Top 10 list in the newspaper!</p>
       <div class="w3-row">
         <div class="w3-col m8 s12">
-          <p><button style="color: black;" class="w3-button w3-padding-large w3-white w3-border"><b id="readMoreButton">READ MORE »</b></button></p>
+          <p><button style="color: black;" class="w3-button w3-padding-large w3-white w3-border" onclick = "openNewsPage()"><b id="readMoreButton">READ MORE »</b></button></p>
         </div>
         <div class="w3-col m4 w3-hide-small">
           <p><span class="w3-padding-large w3-right"><b style="color: black;">Comments  </b> <span class="w3-badge">2</span></span></p>
@@ -193,22 +199,22 @@ and is wrapped around the whole page content, except for the footer in this exam
       <h4>Recent Posts</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white">
-      <li class="w3-padding-16">
+      <li onclick = "openNewsPage()" class="w3-padding-16">
         <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
         <span style="color: black;" class="w3-large">NEW SISTER LOCATION</span><br>
         <span style="color: black;">Company Achievement</span>
       </li>
-      <li class="w3-padding-16">
+      <li onclick = "openNewsPage()" class="w3-padding-16">
         <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
         <span style="color: black;" class="w3-large">AJC Feature</span><br>
         <span style="color: black;">Company Achievement</span>
       </li>
-      <li class="w3-padding-16">
+      <li onclick = "openNewsPage()" class="w3-padding-16">
         <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
         <span style="color: black;" class="w3-large">AMERICAN ACCOUNTING ASSOCIATION</span><br>
         <span style="color: black;">Company Achievement</span>
       </li>
-      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+      <li onclick = "openNewsPage()" class="w3-padding-16 w3-hide-medium w3-hide-small">
         <img src="newsBulletSquare.png" alt="Image" class="w3-left w3-margin-right" style="width:40px" height=40px>
         <span style="color: black;" class="w3-large">FIRST POST-NEW COMPANY!</span><br>
         <span style="color: black;">Company Achievement</span>
