@@ -31,8 +31,12 @@ h4 {
   font-size: 20px;
 }
 
-a :not(.topnav):not(.bottom-leftWords) {
-  color: blue;
+a:link:not(.topnav) {
+  color:  #4d94ff;
+}
+
+a:visited {
+  color:  #00bfff;
 }
 
  /* #33cccc; */
@@ -520,7 +524,7 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #B19F9E;
 }
 
 .tabcontentHeaders {
