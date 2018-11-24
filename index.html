@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <header>
   <title> Accuracy Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel = "stylesheet" type = "text/css" href = "indexCSS.css">
   <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
   <!-- javascript required for opening homepage through alternative means -->
   <script>
@@ -19,6 +20,17 @@
     function openServicesPage() {
       window.location.href = "servicesPage.html";
     }
+
+    function hideFlashAnimation() {
+      var x = document.getElementById("flashAnimation");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+    }
+
+
   </script>
 
 </header>
@@ -57,17 +69,38 @@
     <div class="accuracyLogo">
       <img src="AccuracyLogoSketch.png" height=48px width=37.2px onclick="openHomePage()">
     </div>
-    <i class="navBarLogo" onclick="openHomePage()">Accuracy</i>
+    <i id="accuracyWordLogo" class="navBarLogo" onclick="openHomePage()">Accuracy</i>
   </div>
   <!-- end of navbar code ------------------------------------------------------->
 
   <!-- make background picture fullscreen by simply creating div container -->
-  <div class="bg"></div>
+  <div id="flashAnimation">
+      <div id="exitButtonArea" onclick="hideFlashAnimation()">
+        <h6 id="exitButton"> x </h6>
+      </div>
+    <center><h1 id="accuracyWordLogo" class="animated bounceInLeft delay-0.5s duration-1.5s"> Accuracy Accounting </h1></center>
+  </div>
+
+
+    <script>
+
+
+
+    </script>
+
+
+
+
+
+ <div class="bg"></div>
 
   <div class="frontText">
     <p><h1>Powerful and Efficient Accounting for
       <br>All Your Financial Needs</h1></p>
   </div>
+
+
+
 
 
 
