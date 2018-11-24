@@ -3,7 +3,7 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
-* :not(.navBarLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList):not(input):not(textarea):not(select):not(option):not(optgroup):not(.footer-links) {
+* :not(#accuracyWordLogo):not(a):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6):not(button):not(.w3-light-grey):not(.siteMapList):not(input):not(textarea):not(select):not(option):not(optgroup):not(.footer-links) {
   color: white;
 }
 
@@ -35,8 +35,24 @@ a :not(.topnav):not(.bottom-leftWords) {
   color: blue;
 }
 
+ /* #33cccc; */
+
+/* a:hover:not(.topnav):not(.bottom-leftWords) {
+  color:  #0080ff
+}
+
+a:visited:not(.topnav):not(.bottom-leftWords) {
+  color:  #0080ff
+} */
+
 button {
   color: black;
+  border: black;
+}
+
+button:hover {
+  background-color: grey;
+  border: grey;
 }
 
 
@@ -85,11 +101,14 @@ button {
 } */
 .navBarLogo {
   float: left;
+  padding: 10px 4px 10px 25px;
+}
+
+#accuracyWordLogo {
   font-family: 'Krub', sans-serif;
   font-size: 30px;
   color: #CEBC81;
   text-align: center;
-  padding: 10px 4px 10px 25px;
 }
 
 /* start of dropdown code ***********************/
@@ -168,7 +187,7 @@ body, html {
 /* front text of homepage ***********************/
 .frontText {
   position: fixed;
-  top: 30%;
+  top: 28%;
   left: 5%;
   /* transform: translate(-50%, -50%); */
   font-family: 'Krub', sans-serif;
@@ -179,6 +198,47 @@ body, html {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+
+#flashAnimation {
+  font-style: italic;
+
+  border: #333333 double 10px;
+  background-color: white;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 20px 20px 20px 22px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#exitButton {
+  color: grey;
+  font-size: 28px;
+  /* position: absolute;
+  bottom: 20px;
+  right: 10px; */
+  padding: 5px 5px 5px 5px;
+}
+
+#exitButton:hover {
+  color: pink;
+}
+
+#exitButtonArea {
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 5px 5px 5px 5px;
+
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
 /******************************************************************************/
 
 
@@ -465,6 +525,11 @@ tr:nth-child(even) {
 
 .tabcontentHeaders {
   color: #479761;
+}
+
+.smallerFont {
+  font-weight: normal;
+  font-size: 14px;
 }
 /******************************************************************************/
 
