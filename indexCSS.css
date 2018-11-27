@@ -39,6 +39,10 @@ a:visited {
   color:  #00bfff;
 }
 
+footer {
+  background-color: #333333;
+}
+
  /* #33cccc; */
 
 /* a:hover:not(.topnav):not(.bottom-leftWords) {
@@ -320,7 +324,7 @@ body {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #CEBC81;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -345,7 +349,7 @@ body {
   right: 30px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent blue;
+  border-color: transparent transparent transparent #4d94ff;
 }
 /* Add arrows to the right container (pointing left) */
 .right::before {
@@ -358,7 +362,7 @@ body {
   left: 30px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
-  border-color: transparent blue transparent transparent;
+  border-color: transparent #4d94ff transparent transparent;
 }
 /* Fix the circle for containers on the right side */
 .right::after {
